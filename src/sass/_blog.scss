@@ -1,0 +1,132 @@
+.blog{
+    padding-top: 40px;
+    @include slide--up(2s, 4s);
+    .card{
+        border: none;
+        background-color: transparent;
+    }
+    h4{
+        font-family: CharterBT;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        font-weight: 400;
+        color: $text-blue;
+        padding-bottom: 66px;
+    }
+    .image p{
+        @include slide--up(1s, 2s);
+        position: absolute;
+        top: 22px;
+        left: 28px;
+        font-family: CharterBT;
+        letter-spacing: 0.05px;
+        line-height: 16.78px;
+        background-color: $bg-white;
+        border-radius: 21px;
+        color: $text-blue-3;
+        padding: 8px 17px;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        @include respond-to(768)
+        {
+            font-size: 12px;
+            left: 18px;
+        }
+        @include respond-to(767)
+        {
+            left: 28px;
+        }
+    }
+    &__date{
+        small{
+            font-family: CharterBT;
+            font-size: 14px;
+            color: $text-black-2;
+            letter-spacing: 0.05px;
+            line-height: 16.78px;
+        }
+    }
+    &__title{
+        padding-top: 14px;
+        h5{
+            font-family: CharterBT;
+            font-size: 1.375rem;
+            color: $text-blue;
+            letter-spacing: 0.07px;
+            line-height: 26.37px;
+        }
+    }
+    &__content{
+        padding-top: 14px;
+        font-size: 1rem;
+        color: $text-black;
+        letter-spacing: 0.05px;
+        line-height: 22px;
+        font-family: CircularStd-Book;
+    }
+    &__read-more{
+        padding-top: 16px;
+        a{
+            font-size: 1rem;
+            color: $text-blue;
+            letter-spacing: 0.05px;
+            font-family: CircularStd-Book;
+            line-height: 22px;
+            text-decoration: underline;
+            &:hover{
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__loading-more{
+        text-align: center;
+        padding: 100px 0;
+        @include respond-to(767){
+            padding: 20px 0;
+        }
+        a{
+            font-family: CharterBT;
+            font-size: 1.625rem;
+            color: $text-blue;
+            letter-spacing: 0.08px;
+            line-height: 31.17px;
+            cursor: pointer;
+            &:hover{
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+    }
+    .filter{
+        @include slide--up(2s, 4s);
+        display: flex;
+        flex-wrap: wrap;
+        color: $text-gray-3;
+        padding-bottom: 40px;
+        p{
+            margin: 0;
+            padding-right: 35px;
+            font-size: 20px;
+            font-family: CircularStd-Book;
+        }
+        button{
+            color: $text-gray-3;
+            padding: 0 10px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-family: CircularStd-Book;
+            &:hover{
+                color: $text-blue-3;
+            }
+        }
+        span{
+            color: $text-gray-4;
+
+        }
+    }
+}
+

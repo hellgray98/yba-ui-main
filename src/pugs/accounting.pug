@@ -1,0 +1,20 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title Namtech - Accounting
+    
+block main-wrapper
+    include ./mixin/banner.pug
+    h1.d-none Namtech - Accounting
+    .wrapper-child
+        include ./parts/component/business.pug
+        +banner('./assets/imgs/banner/banner-1.jpg','banner-1')
+        include ./parts/component/our-client.pug
+        include ./parts/component/program-solution.pug
+        include ./parts/component/tax-planning.pug
+        +banner('./assets/imgs/banner/banner-2.jpg','banner-2')
+        include ./parts/component/financial-habit.pug
+        include ./parts/component/taxman.pug
+        include ./parts/component/rebuild-account.pug
+        include ./parts/component/slide.pug
+        include ./parts/component/contact.pug

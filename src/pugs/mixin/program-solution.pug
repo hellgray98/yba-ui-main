@@ -1,0 +1,19 @@
+mixin programSolution(src, alt, content1, content2, content3, mb)
+    .program-solution.padding-x-55
+        .row
+            .col-lg-4.col-12
+                .image.h-100
+                    img(src=src, alt=alt)
+            .col-lg-8.col-12.align-self-end
+                .contents
+                    .row.pt-4.pt-lg-0(class!=attributes.class)
+                        .row.mx-0
+                            .col-12.col-md-6.pr-lg-5
+                                p !{content1}
+                            .col-12.col-md-6
+                                p !{content2}
+                        .row.mx-0(class=mb)
+                            .col-12
+                                h6 !{content3}
+    .padding-x-55
+        hr

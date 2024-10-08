@@ -1,0 +1,39 @@
+.program-solution{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @include slide--up(2s, 4s);
+    .contents{
+        padding-left: 40px;
+        @include respond-to(768){
+            padding-left: 0px;
+        }
+    }
+    @include respond-to(768){
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contents{
+        p{
+            font-size: 1.125rem;
+            letter-spacing: 0.06px;
+            @include respond-to(1025){
+                font-size:  1rem;
+            }
+        }
+        h6{
+            font-family: CharterBT;
+            font-size:  1.875rem;
+            letter-spacing: 0.0969225px;
+            color: $text-blue;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            @include respond-to(1025){
+                font-size:  1.25rem;
+            }
+        }
+    }
+    span{
+        color: $text-blue;
+    }
+}

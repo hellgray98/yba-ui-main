@@ -1,0 +1,67 @@
+.item{
+    display: flex;
+}
+.rectangle1{
+    background-color:#D8D8D8;
+    flex: 50%;
+    img{
+        object-fit: cover;
+    }
+}
+.rectangle2{
+    background-color: #F3F3F3;
+    position: relative;
+    flex: 50%;
+    text-align: center;
+    .quote{
+        color: $text-black;
+        font-family: CharterBT;
+        font-size: 30px;
+        margin: 0;
+        letter-spacing: 0.1px;
+        line-height: 35.96px;
+        padding-bottom: 66px;
+        @include respond-to(1100){
+            padding-bottom: 0;
+        }
+        @include respond-to(768){
+            font-size: 20px;
+        }
+        @include respond-to(767){
+            line-height: 1;
+            font-size: 12px;
+        }
+        @include respond-to(280){
+            font-size: 10px;
+        }
+    }
+    .sign{
+        color: $text-blue;
+        font-family: CircularStd-Book;
+        font-size: 30px;
+        letter-spacing: 0.1px;
+        line-height: 37.95px;
+        margin: 0;
+        @include respond-to(768){
+            font-size: 20px;
+        }
+        @include respond-to(767){
+            font-size: 12px;
+            line-height: 1;
+        }
+        @include respond-to(280){
+            font-size: 10px;
+        }
+    }
+}
+.rectangle_box{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -29%;
+    transform: translate(-50%, -50%);
+    @include respond-to(768){
+        margin-right: -40%;
+    }
+}

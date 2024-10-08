@@ -1,0 +1,11 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title Namtech - Blog Post
+    
+block main-wrapper
+    h1.d-none Namtech - Blog Post
+    include ./mixin/title.pug
+    .wrapper-child
+        include ./parts/component/blog-detail.pug
+        include ./parts/component/other-article.pug

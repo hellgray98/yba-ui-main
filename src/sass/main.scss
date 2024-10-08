@@ -1,0 +1,152 @@
+@import 'variables.scss';
+@import 'function.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'steps-we-take.scss';
+@import 'accounting.scss';
+@import 'our-client.scss';
+@import 'program-solution.scss';
+@import 'consulting.scss';
+@import 'our-approach.scss';
+@import 'taxman.scss';
+@import 'slide.scss';
+@import 'blog-detail.scss';
+@import 'blog.scss';
+@import 'article.scss';
+@import 'other-article.scss';
+
+/*
+ *  Common Header & Footer
+ */
+.common {
+    &-header {
+        @include slide--up(1s, 1.5s);
+    }
+
+    &-footer {
+        color: $text-black;
+        letter-spacing: 0.06px;
+        font-size: 1.125rem;
+        @include slide--up(2s, 4s);
+        .footer-contents{
+            padding: 70px 0 40px 0;
+            @include respond-to(768){
+                padding: 35px 0;
+            }
+            .contact{
+                line-height: 35px;
+                a{
+                    color: $text-black;
+                    display: block;
+                    &:hover{
+                        color: $text-blue;
+                        font-style: italic;
+                    }
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            .logo{
+                display: flex;
+                color: $text-blue;
+            }
+        }
+    }
+}
+
+/*
+ *  Main Wrapper
+ */
+.main-wrapper {
+    // width: 100vw;
+    // min-height: 100vh;
+
+    @extend .dflex;
+    @extend .dflex--default;
+    @extend .dflex--col;
+    @extend .align--left;
+
+    img {
+        // margin-bottom: 2em;
+        // margin-top: 2em;
+        @include logo--special(1s, 1.5s);
+    }
+
+    h1 {
+        font-family: graphik-bold;
+        font-size: 3rem;
+        @include slide--up(1.25s, 2.25s);
+
+        span {
+            letter-spacing: 4px;
+            &:first-child {
+                color: $light-color;
+                -webkit-text-stroke: 1px black;
+            }
+            &:last-child {
+                @extend .text--primary;
+            }
+        }
+    }
+
+    h2 {
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        @include slide--up(1.5s, 3.5s);
+    }
+
+    .content {
+        padding: 2rem;
+        @include slide--up(1.75s, 3.75s);    
+    }
+}
+.block-content{
+    padding: 80px 155px 0 55px;
+    p{
+        color: $text-black;
+        font-family: CharterBT;
+        font-size: 36px;
+        letter-spacing: 0.12px;
+        line-height: 43.15px;
+        text-align: left;
+        span{
+            color: $text-blue;
+        }
+    }
+    .block-content__contact{
+        padding-top: 50px;
+    }
+    @include respond-to(768){
+        padding: 50px 0;
+        p{
+            font-size: 25px;
+        }
+        .block-content__contact{
+            padding-top: 0;
+        }
+    }
+}
+.block-content__contact{
+    padding: 80px 0 99px 55px;
+    p{
+        color: $text-black;
+        font-family: CharterBT;
+        font-size: 36px;
+        letter-spacing: 0.12px;
+        line-height: 43.15px;
+        text-align: left;
+        a{
+            color: $text-blue;
+        }
+    }
+    @include respond-to(768){
+        padding: 0 0 50px 0;
+        p{
+            font-size: 25px;
+        }
+        .block-content__contact{
+            padding-top: 0;
+        }
+    }
+}

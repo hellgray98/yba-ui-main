@@ -1,0 +1,42 @@
+//responsive
+@mixin respond-to($media) {
+    @media only screen and (max-width: $media + "px") {
+        @content;
+    }
+}
+
+/*========================================================*/
+@mixin respond-toSP($media) {
+    @media only screen and (min-width: $media + "px") {
+        @content;
+    }
+}
+
+/*========================================================*/
+
+/*========================================================*/
+@mixin ie() {
+
+    //----------------------------------------
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        @content;
+    }
+
+    //----------------------------------------
+}
+
+
+@mixin logo--special($st, $ft) {
+    animation-name: slideUp, fadeIn;
+    animation-timing-function: ease, ease;
+    animation-duration: $st, $ft;
+}
+
+@mixin slide--up($st, $ft) {
+    animation-name: slideUp, fadeIn;
+    animation-duration: $st, $ft;
+    animation-timing-function: ease, ease;
+}
+
+/*========================================================*/

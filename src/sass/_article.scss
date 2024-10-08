@@ -1,0 +1,87 @@
+
+.body-article{
+    padding-top: 51px;
+    padding-bottom: 112px;
+    @include respond-to(768){
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .article{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__item_box{
+            width: 50%;
+            &:first-child{
+                padding-right: 49px;
+                @include respond-to(768){
+                    padding-right: 0px;
+                }
+            }
+            &:last-child{
+                padding-left: 49px;
+                @include respond-to(768){
+                    padding-left: 0;
+                }
+            }
+            img{
+               object-fit: cover;
+            }
+            @include respond-to(768){
+                width:100%;
+            }
+        }
+        h4{
+            font-family: CharterBT;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 43.15px;
+            letter-spacing: 0.12px;
+        }
+        p{
+            font-family: CircularStd-Book;
+            font-weight: 450;
+            font-size: 18px;
+            line-height: 22.27px;
+            letter-spacing: 0.06px;
+        }
+        h5{
+            font-family: CircularStd-Book;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 25.3px;
+            letter-spacing: 0.06px;
+            color: $text-blue;
+        }
+        span{
+            font-family: CircularStd-Book;
+            font-weight: 450;
+            font-size: 18px;
+            line-height: 22.27px;
+            letter-spacing: 0.06px;
+            color: $text-blue;
+        }
+    }
+    .article_content{
+        padding-top: 66px;
+        h4{
+            padding-bottom: 34px;
+        }
+        .context{
+            padding-bottom: 55px;
+        }
+        h5{
+            padding-bottom: 30px;
+        }
+        @include respond-to(768){
+                padding-top: 30px;
+                padding-bottom: 30px;
+            h4{
+                padding-bottom: 20px;
+            }
+            h5{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}  

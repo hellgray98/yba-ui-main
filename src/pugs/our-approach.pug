@@ -1,0 +1,15 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title Namtech - Our Approach
+    
+block main-wrapper
+    include ./mixin/banner.pug
+    h1.d-none Namtech - Our Approach
+    include ./parts/component/our-approach-hero.pug
+    include ./parts/component/steps-we-take.pug
+    include ./parts/component/slide.pug
+    .wrapper-child
+        .container-fluid
+            .our-approach__text.padding-x-55
+                p Get in touch with us today for an obligation free consultation and get your business back on track.

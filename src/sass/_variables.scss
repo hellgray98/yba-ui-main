@@ -1,0 +1,58 @@
+/* 
+ *  Theme variables 
+ */
+$primary-color: #ce2028;
+$secondary-color: gray;
+$light-color: white;
+$dark-color: grey;
+$text-color: black;
+$text-black: #505050;
+$text-black-2: #525252;
+$text-blue: #0072FF;
+$text-blue-2: #4E96FF;
+$text-blue-3: #1B80FE;
+$text-gray: #707070;
+$text-gray-2: #878787;
+$text-gray-3: #7D7D7D;
+$text-gray-4: #E2E2E2;
+$bg-grey: #D8D8D8;
+$bg-grey-2: #979797;
+$bg-white: #FAFAFA;
+
+/* 
+ *  Fonts define 
+ */
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("../fonts/CircularStd/CircularStd-Book.otf");
+}
+
+@font-face {
+    font-family: CircularStd-BookItalic;
+    src: url("../fonts/CircularStd/CircularStd-BookItalic.otf");
+}
+
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url("../fonts/CircularStd/CircularStd-Bold.otf");
+}
+
+@font-face {
+    font-family: CircularStd-Medium;
+    src: url("../fonts/CircularStd/CircularStd-Medium.otf");
+}
+
+@font-face {
+    font-family: CharterBT;
+    src: url("../fonts/charter_bt/CharterBT.ttf");
+}
+
+@font-face {
+    font-family: CharterBlackBT;
+    src: url("../fonts/charter_bt/CharterBlackBT.ttf");
+}
+
+@font-face {
+    font-family: CharterBlackItalicBT;
+    src: url("../fonts/charter_bt/CharterBlackItalicBT.ttf") format("truetype");
+}

@@ -1,0 +1,51 @@
+.business-consulting{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    .content-box-left{
+       width: 30%;
+       @include respond-to(767){
+        width: 100%;
+        }
+    }
+    .content-box-right{
+       width: 70%;
+       @include respond-to(767){
+        width: 100%;
+        }
+        p{
+            padding-left: 50px;
+            letter-spacing: 0.12px;
+            @include respond-to(767){
+                padding-left: 0;
+            }
+        }
+    }
+    p{
+        font-size: 18px;
+        font-family: CircularStd-Book;
+    }
+    span{
+        color: $text-blue;
+    }
+    @include respond-to(768){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @include respond-to(767){
+        flex-direction: column;
+    }
+}
+.box-content{
+    p{
+        padding: 47px 0;
+        font-size: 18px;
+        width: 70%;
+        letter-spacing: 0.06px;
+        font-family: CircularStd-Book;
+        @include respond-to(768){
+            padding: 20px 0;
+            width: 100%;
+        }
+    }
+}

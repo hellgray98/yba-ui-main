@@ -1,0 +1,132 @@
+.accounting{
+    @include slide--up(2s, 4s);
+    padding-bottom: 70px;
+    @include respond-to(768){
+        padding-bottom: 20px;
+    }
+    p{
+        font-family: CircularStd-Book;
+        font-size: 1rem;
+        letter-spacing: 0.05px;
+    }
+    h4{
+        font-family: CircularStd-Book;
+        color: $text-blue;
+        font-size: 1.625rem;
+        letter-spacing: 0.0839995px;
+        padding-bottom: 15px;
+        @include respond-to(768){
+            font-size: 1rem;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.business{
+    padding-top: 90px;
+    @include slide--up(2s, 4s);
+    @include respond-to(768){
+        padding-top: 30px;
+    }
+    @include respond-to(767){
+        width: 100%;
+        text-align: justify;
+    }
+    p{
+        font-family: CharterBT;
+        font-size: 2.25rem;
+        letter-spacing: 0.116307px;
+        span{
+            color: $text-blue;
+        }
+        @include respond-to(768){
+            font-size: 1.25rem;
+        }
+    }
+    h3{
+        font-family: CircularStd-Book;
+        color: $text-blue;
+        font-size: 1.625rem;
+        letter-spacing: 0.0839995px;
+        padding-bottom: 15px;
+        @include respond-to(768){
+            font-size: 1.625rem;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+    }
+}
+.tax-planning{
+    padding-top: 60px;
+    display: flex;
+    .content{
+        flex: 33%;
+        padding: 0 80px 80px 0!important;
+        &:last-child{
+            padding: 0 0 80px 0!important;
+        }
+        @include respond-to(768){
+            padding:0!important;
+        }
+    }
+    p{
+        font-family: CircularStd-Book;
+        font-size: 18px;
+        line-height: 22.27px;
+        letter-spacing: 0.06px;
+    }
+    @include respond-to(768){
+        flex-direction: column;
+        padding-top: 0;
+    }
+}
+.financial-habit{
+    line-height: 30px;
+    width: 60%;
+    padding-bottom: 90px;
+    padding-top: 30px;
+    p{
+        margin: 0;
+        font-family: CircularStd-Book;
+        font-size: 18px;
+        letter-spacing: 0.06px;
+    }
+    span{
+        color: $text-blue;
+        font-family: CircularStd-Book;
+        font-size: 18px;
+        letter-spacing: 0.06px;
+    }
+    @include respond-to(768){
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+.rebuild-account{
+    display: flex;
+    padding-top: 60px;
+    flex-direction: row;
+    padding-bottom: 94px;
+    .content_box{
+        flex: 33%;
+        padding-right: 79px;
+        p{
+            font-family: CircularStd-Book;
+            font-size: 18px;
+        }
+        span{
+            font-family: CircularStd-Medium;
+            font-size: 18px;
+            color: $text-blue;
+        }
+        @include respond-to(768){
+            padding-right: 0;
+            padding-bottom: 20px;
+        }
+    }
+    @include respond-to(768){
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

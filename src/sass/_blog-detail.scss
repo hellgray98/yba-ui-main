@@ -1,0 +1,80 @@
+.blog-detail{
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 149px;
+    span{
+        background-color: $text-blue;
+        padding: 10px 20px;
+        color: $light-color;
+        border-radius: 26px;
+    }
+    h3{
+        padding: 30px 0;
+        font-family: CharterBT;
+        font-weight: 400;
+        color: $text-blue;
+        font-size: 36px;
+        line-height: 43.15px;
+        letter-spacing: 0.12px;
+    }
+    small{
+        font-size: 20px;
+        font-weight: 450px;
+        line-height: 25.3px;
+        letter-spacing: 0.06px;
+        font-family: CircularStd-Book;
+        color: #7D7D7D;
+    }
+    p{
+        padding-top: 45px;
+        font-family: CircularStd-Book;
+        font-size: 18px;
+        font-weight: 450;
+        line-height: 28px;
+        letter-spacing: 0.06px;
+        padding-bottom: 30px;
+    }
+    a{
+        font-family: CircularStd-Book;
+        color: $text-blue;
+        font-weight: 450;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.06px;
+        text-decoration: underline;
+    }
+    .image-50{
+        display: flex;
+        img{
+            width: 50%;
+            &:first-child{
+                padding-right: 24px;
+                @include respond-to(767)
+                {
+                    padding: 0;
+                }
+            }
+            &:last-child{
+                padding-left: 24px;
+                @include respond-to(767)
+                {
+                    padding-left: 0;
+                    padding-top: 20px;
+                }
+            }
+            @include respond-to(767)
+            {
+                width: 100%;
+            }
+        }
+        @include respond-to(767)
+        {
+            flex-direction: column;
+        }
+    }
+    @include respond-to(768)
+    {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+}

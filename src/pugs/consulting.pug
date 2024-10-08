@@ -1,0 +1,30 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title Namtech - Accounting
+    
+block main-wrapper
+    include ./mixin/banner.pug
+    include ./mixin/title.pug
+    include ./mixin/program-solution.pug
+    include ./mixin/box-content.pug
+    h1.d-none Namtech - Consulting
+    .wrapper-child
+        include ./parts/component/business-consulting.pug
+        +banner('./assets/imgs/banner/banner-1.jpg','banner-1')
+        .container-fluid
+            +title('The road out','Face the COVID crisis knowing that you are going to get through. You will survive and have a strong business because you partnered with Your Business Angels.','w-80')
+            +programSolution('./assets/imgs/accounting/accounting-1.jpg','accounting-1','These programs watch the back of the client, as well as find crafty solutions. Intelligent strategies in business often come with risk, and Your Business Angels can monitor that risk and help business owners succeed.','It is for those who want to run their business and not get bogged down learning software until the software takes over their lives, while they face the challenges of the future.','Your Business Angels can put business owners who seek growth and profit in a unique program.','mb-5')(class ="flex-column-reverse")
+        .container-fluid
+            +box-content('Issues with debt – prepared insolvency solutions','25 years of solutions at Your Business Angels will have one for you','w-80','Your Business Angels have some crafty solutions. “Opportunities can come brilliantly disguised as insurmountable problems.” The good folk at Your Business Angels often hear from clients explaining a problem they have, and they realise that the client’s problem is an opportunity.','We are here for those who thought there could not be a plan')
+            .padding-x-55
+                hr
+        .container-fluid
+            include ./parts/component/article.pug
+        .container-fluid
+            +box-content('Profit boosting your business','“When I am ready to grow, Your Business Angels will get right behind me and help drive my business.”','w-80','Some clients might want to hang out on the edge, while others are happy to cruise along in their business. </br>No matter what lane business owners want to travel in, Your Business Angels will understand their needs and requirements and make sure they are safe.','')
+        +banner('./assets/imgs/banner/banner-1.jpg','banner-1')
+        .container-fluid
+            +box-content('Turnaround','Behind every struggling business is an opportunity to have a great business. It is just a matter of having a plan.','w-80','The Your Business Angels is a product that analyses any size business. The analysis helps business owners make changes that improve their financial position of their business. By creating tactics to be implemented to improve the businesses finance and solve fundamental problems.','“Our turnaround solutions are some of our signature dishes.”')
+        include ./parts/component/slide.pug
+        include ./parts/component/contact.pug

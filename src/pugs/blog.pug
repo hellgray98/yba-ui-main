@@ -1,0 +1,14 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title Namtech - Blog
+    
+block main-wrapper
+    include ./mixin/banner.pug
+    include ./mixin/title.pug
+    h1.d-none Namtech - Blog
+    .wrapper-child
+        .container-fluid
+            +title('Blog','<span>Placeholder —</span> That your business becomes as profitable as it can be (on a cash basis). Profit pays debt, profit drives the business forward and profit gives you the reward for all your hard work.','w-90')
+            include ./parts/component/blog-list.pug
+    include ./parts/component/contact.pug

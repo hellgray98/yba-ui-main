@@ -1,0 +1,97 @@
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    max-width: 1920px;
+    width: 100%;
+    // background-color: $light-color;
+}
+.banner-info{
+    background: $text-blue;
+    max-width: 1920px;
+    width: 100%;
+}
+.text-info{
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    height: 46px;
+    align-items: center;
+    text-align: center;
+    p{
+        margin: 0;
+        color: #D8D8D8;
+        font-family: CircularStd-BookItalic;
+        font-size: 18px;
+        letter-spacing: 0.06px;
+        line-height: 22.77px;
+        a{
+            color: #D8D8D8;
+            text-decoration: underline;
+        }
+        @include respond-to(768){
+            font-size: 14px;
+        }
+    }
+}
+.common-header{
+    width: 100%;
+    max-width: 1920px;
+    nav{
+        background-color: #FAFAFA!important;
+        padding: 30px 70px;
+        .nav-link{
+            color: $text-black!important;
+            font-size: 18px;
+            letter-spacing: 0.06px;
+            line-height: 22.77px;
+            text-align: left;
+            &:hover{
+                color: $text-blue!important;
+            }
+        }
+        .phone{
+            a{
+                font-family: CircularStd-Book;
+                color: $text-blue!important;
+            }
+        }
+        @include respond-to(1024){
+            .nav-item{
+                padding-right: 0!important;
+            }
+            .nav-link{
+                font-size: 15px;
+            }
+        }
+        @include respond-to(768){
+            padding: 10px 15px;
+            .nav-link{
+                font-size: 16px;
+            }
+            .navbar-brand{
+                width: 300px;
+                svg{
+                    width: 100%;
+                }
+            }                                                                                                                                                               
+        }
+        @include respond-to(767){
+            .navbar-brand{
+                width: 200px;
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+        @include respond-to(280){
+            .navbar-brand{
+                width: 150px;
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

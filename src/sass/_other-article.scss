@@ -1,0 +1,37 @@
+.other-articles{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 142px;
+    .other-article-item{
+        width: 33%;
+        &:first-child{
+            padding-right: 29px;
+            @include respond-to(767){
+               padding-right: 0;
+            }
+        }
+        &:last-child{
+            padding-left: 29px;
+            @include respond-to(767){
+               padding-left: 0;
+            }
+        }
+        @include respond-to(767){
+            width: 100%;
+            padding-bottom: 30px;
+        }
+        .blog__date{
+            padding-top: 39px;
+            small{
+                font-size: 14px;
+                font-family: CharterBT;
+                letter-spacing: 0.05px;
+                line-height: 16.78px;
+            }
+        }
+
+    }
+    @include respond-to(768){
+        padding-bottom: 60px;
+    }
+}

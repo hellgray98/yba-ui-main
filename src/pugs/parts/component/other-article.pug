@@ -1,0 +1,25 @@
+.container-fluid
+    .blog.padding-x-55
+        h4 Other Article
+        .other-articles
+            -
+                let cards = [
+                    {href: "./blog-post.html", src: "./assets/imgs/blog/blog-4.jpg", alt: "blog-4", textImg: "Services", date: "12.05.2020", title: "Placeholder title of article", content: "To start, we work with you to make sure your accounting systems are properly set up."},
+                    {href: "./blog-post.html", src: "./assets/imgs/blog/blog-3.jpg", alt: "blog-3", textImg: "Swimming to The Safe Harbour", date: "12.05.2020", title: "Placeholder title of article", content: "To start, we work with you to make sure your accounting systems are properly set up."},
+                    {href: "./blog-post.html", src: "./assets/imgs/blog/blog-4.jpg", alt: "blog-4", textImg: "Tax", date: "12.05.2020", title: "Placeholder title of article", content: "To start, we work with you to make sure your accounting systems are properly set up."},
+                ]
+            for card in cards
+                .other-article-item(class=card.class)
+                    a(href=card.href)
+                        .image.position-relative
+                            img.card-img-top(src=card.src alt=card.alt)
+                            p= card.textImg
+                        .other-article-content.px-0
+                            .blog__date
+                                small= card.date
+                            .blog__title
+                                h5= card.title
+                            .blog__content
+                                p= card.content
+                            .blog__read-more
+                                a(href=card.href) Read More

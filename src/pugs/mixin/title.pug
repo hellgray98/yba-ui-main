@@ -1,0 +1,6 @@
+mixin title(title, contents, width)
+    .business.slide--up.padding-x-55(class=width)
+        h3= title
+        p !{contents}
+            if block
+                block
